@@ -39,7 +39,7 @@ Future<void> main(List<String> arguments) async {
     final contents = await file.readAsLines();
     for (int i = 0; i < contents.length; i++) {
       final line = contents[i];
-      final lineContent = line.replaceAll(RegExp(r'\t\s'), '').toLowerCase();
+      final lineContent = line.replaceAll(RegExp(r'\s'), '').toLowerCase();
       if (commentsToCheck.any(lineContent.startsWith)) {
         filesFoundWithTemp.add(
           FoundData(file: file, lineNumber: i + 1),
