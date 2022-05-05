@@ -56,4 +56,6 @@ Future<void> main(List<String> arguments) async {
   for (final file in filesFoundWithTemp) {
     print('${file.file.absolute.path} at line number ${file.lineNumber}\n');
   }
+
+  exit(1);
 }

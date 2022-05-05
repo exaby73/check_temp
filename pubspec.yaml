@@ -1,6 +1,6 @@
 name: check_temp
 description: Check for temp comments like REMOVE, TEMP
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/exaby73/check_temp
 
 environment:

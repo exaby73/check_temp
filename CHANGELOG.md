@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Fix: exit code
+
 ## 0.0.3
 
 - Fix: enabled recursive into sub-directories
