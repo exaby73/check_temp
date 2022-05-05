@@ -28,7 +28,7 @@ Future<void> main(List<String> arguments) async {
     exit(1);
   }
 
-  final allFiles = await dir.list().toList();
+  final allFiles = await dir.list(recursive: true, followLinks: true).toList();
   final filesFoundWithTemp = <FoundData>[];
   for (final fileEntity in allFiles) {
     final name = basename(fileEntity.path);
